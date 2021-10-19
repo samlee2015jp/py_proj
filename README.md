@@ -1,1 +1,1 @@
-# py_proj
+# This is a project for python in coding.
