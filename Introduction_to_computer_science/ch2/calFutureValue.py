@@ -1,4 +1,7 @@
-# calculate future value of principal by initial principal and interest rate
+# calFutureValue.py
+# A program to compute the value of an investment
+# carried 10 years into the future
+
 def calFuterValue():
     print("This program calculates the future value")
     print("of a 10-year investment.")
