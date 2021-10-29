@@ -2,13 +2,20 @@
 def fib(n):
     if (n <= 1):
         return n
-    return fib(n - 1) + fib(fib(n - 2))
+    return fib(n - 1) + fib(n - 2)
 
-'''
+
 def dp_fib(n):
-    f[0] = 0
-    f[1] = 1
-    for (int i == 2; i <= n; i ++):
-        f[i] = f[i - 1] + f[i - 2]
-    return f[n]
-'''
+    f = []
+    for i in range(n):
+        if (i == 0):
+            f.append(0)
+        elif (i == 1):
+            f.append(1)
+        else:
+            f.append(f[i - 1] + f[i - 2])
+        print(i, f[i])
+    print(f)
+
+# fib(10)
+dp_fib(10)
